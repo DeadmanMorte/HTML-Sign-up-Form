@@ -28,7 +28,9 @@
                 <input type="text" id="address" name="address">
                 <label for="city">City</label>
                 <input type="text" id="city" name="city">
-                <select name="state"> 
+                <label for="state-list">Your State</label>
+                <input name="state" list="state-list">
+                <datalist id="state-list"> 
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -78,32 +80,44 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WV">West Virginia</option>
                 <option value="WY">Wyoming</option>
-                </select>
+                </datalist>
                 <label for="zipcode">Zipcode</label>
                 <input type="text" id="zipcode" name="zipcode">
             </fieldset>
 
             <fieldset>
                 <legend>Your Preferences</legend>
-                <input type="radio" id="aruba" name="location" value="Aruba" checked>
+                <div>
+                <input type="radio" id="aruba" name="location" value="Aruba" >
                 <label for="aruba">Aruba</label>
+                </div>
+                <div>
                 <input type="radio" id="japan" name="location" value="Japan" checked>
                 <label for="japan">Japan</label>
-                <input type="radio" id="nz" name="location" value="New Zealand" checked>
+                </div>
+                <div>
+                <input type="radio" id="nz" name="location" value="New Zealand" >
                 <label for="nz">New Zealand</label>
-                <input type="radio" id="reykjavik" name="location" value="New Zealand" checked>
+                </div>
+                <div>
+                <input type="radio" id="reykjavik" name="location" value="Reykjavik" >
                 <label for="reykjavik">Reykjavik</label>
+                </div>
             </fieldset>
-                <label for="color">Color</label>
+            <div>
+                <label for="color">Favorite Color</label>
                 <input type="color" id="color" name="color">
+            </div>
+                <input type="checkbox" id="drinks" name="extras" >
                 <label for="drinks">Bottomless Drinks</label>
-                <input type="checkbox" id="drinks" name="extras" checked>
+                <input type="checkbox" id="jokes" name="extras" >
                 <label for="jokes">Unlimited Money</label>
-                <input type="checkbox" id="jokes" name="extras" checked>
+                <input type="checkbox" id="minions" name="extras" >
                 <label for="minions">Four minions</label>
-                <input type="checkbox" id="minions" name="extras" checked>
-            
-    
+                <input type="checkbox" id="minions" name="extras" >
+                <label for="minions">Superman's exact powers</label>
+                <input type="checkbox" id="minions" name="extras" >
+                <label for="minions">A spork of Rhodium</label>
             <input type="submit" value="Enter the Contest">
         </form>
     </main>
